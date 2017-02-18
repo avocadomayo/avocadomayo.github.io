@@ -1,1 +1,47 @@
-Hello World
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>This is : Wendy Liu</title>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery.viewport.js"></script>
+</head>
+<body>
+    <ul class="menu center">
+        <li class="menu"><a href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
+        <li class="menu"><a href="#"><i class="fa fa-camera fa-fw" aria-hidden="true"></i>&nbsp; Portfolio</a></li>
+        <li class="menu"><a href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Resume</a></li>
+        <li class="menu"><a href="#"><i class="fa fa-commenting-o fa-fw" aria-hidden="true"></i>&nbsp; Contact</a></li>
+    </ul>
+
+    <div class="content center">
+        <a href="#two">Normal link</a>
+        <h1>About Wendy Liu</h1>
+        <p>
+            I'm a Computer Science undergraduate student in my last year of study.
+            I'm passionate about User Experience, and I love communicating with people to learn how I can make their lives easier through technology.
+        </p>
+        <p>
+            My love for UX is only rivaled by my obsession with video games.
+            In my spare time, (I play and) make games on Unity.
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </p>
+    </div>
+
+    <div class="content center">
+        <h1>Portfolio</h1>
+        <video src="img/degnav.mp4" id="degnav" class="video" width="800" height="434" loop>HTML5 Video is not supported.</video>
+    </div>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            if ($("degnav:in-viewport")) 
+                document.getElementById("degnav").play();
+        });
+    </script>
+
+</body>
+</html>

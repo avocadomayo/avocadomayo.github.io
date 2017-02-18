@@ -1,0 +1,75 @@
+﻿/*
+    Notes:
+    .main for classes
+    #unique for ids
+*/
+
+@font-face {
+    font-family: Montserrat;
+    src: url('fonts/Montserrat-Light.otf');
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: bold;
+    src: url('fonts/Montserrat-SemiBold.otf');
+}
+
+body {
+    background: #000;
+    height: 2000px;
+    color: #c2c2c2;
+    margin: 0;
+    font-family: 'Roboto', Montserrat, Verdana, sans-serif;
+}
+
+a:link, a:visited, a:hover, a:active { 
+    color: #fff;
+    text-decoration: none;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+ul.menu {
+    width: 600px;
+    list-style-type: none;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+li.menu {
+    float: left;
+    font-size: large;
+    background-color: #00c1ab;
+}
+
+li.menu a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px 10px 20px;
+}
+
+.content {
+    margin-top: 80px;
+    width: 800px;
+}
+
+/*
+    Consider different font for heading?
+*/
+h1 {
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.video {
+    border: 0px solid #ccc;
+}
+
+/*
+    display: block;
+    background-color: #0aa99f;
+*/
