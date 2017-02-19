@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>This is : Wendy Liu</title>
+    <title>Wendy Liu</title>
     <meta charset="utf-8" />
     <link href="style.css" rel="stylesheet" />
     <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -12,33 +12,38 @@
 <body>
     <ul class="menu center">
         <li class="menu"><a href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
-        <li class="menu"><a href="#"><i class="fa fa-camera fa-fw" aria-hidden="true"></i>&nbsp; Portfolio</a></li>
+        <li class="menu"><a href="#portfolio"><i class="fa fa-camera fa-fw" aria-hidden="true"></i>&nbsp; Portfolio</a></li>
         <li class="menu"><a href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Resume</a></li>
         <li class="menu"><a href="#"><i class="fa fa-commenting-o fa-fw" aria-hidden="true"></i>&nbsp; Contact</a></li>
     </ul>
-
     <div class="content center">
         <a href="#two">Normal link</a>
-        <h1>About Wendy Liu</h1>
+        <h1>Hi! I'm Wendy.</h1>
         <p>
-            I'm a Computer Science undergraduate student in my last year of study.
-            I'm passionate about User Experience, and I love communicating with people to learn how I can make their lives easier through technology.
+            Aspiring UX designer passionate about making intuitive design. Background in Computer Science.
         </p>
         <p>
-            My love for UX is only rivaled by my obsession with video games.
-            In my spare time, (I play and) make games on Unity.
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <a href="mailto:wendy_jy_liu@hotmail.com"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> &nbsp; Shoot me a message!</a>
         </p>
     </div>
 
     <div class="content center">
-        <h1>Portfolio</h1>
+        <a name="portfolio"></a>
+        <h1>Degree Navigator Redesign</h1>
         <video src="img/degnav.mp4" id="degnav" class="video" width="800" height="434" loop>HTML5 Video is not supported.</video>
+        <h2>Web app prototype | 2016 | UX Designer</h2>
+        <h3>Problem</h3>
+        <p>Degree Navigator is an existing degree audit interface at University of British Columbia intended to help students track and plan their degree. Like many university websites, it was dated and difficult to navigate. Information needed for degree planning was structured per institutional organization, rather than how students planned their courses to fulfill their graduation requirements. Students were prone to overlook required courses, which often delayed their graduation.</p>
+        <h3>Solution</h3>
+        <p>I collaborated with a team of HCI students from UBC to user test the current interface and identify student needs in degree planning. We designed a proof-of-concept that centralized information to create a seamless, efficient degree-planning experience. In this interactive prototype, students can browse courses and see how credits would fit into their degrees, all in one place. I created a modern look to the interface, and sampled colours from the university website to maintain consistency.</p>
     </div>
+
+
+
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript">
         $(window).scroll(function () {
-            if ($("degnav:in-viewport")) 
+            if ($("degnav:in-viewport"))
                 document.getElementById("degnav").play();
         });
     </script>

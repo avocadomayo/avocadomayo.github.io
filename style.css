@@ -4,27 +4,18 @@
     #unique for ids
 */
 
-@font-face {
-    font-family: Montserrat;
-    src: url('fonts/Montserrat-Light.otf');
-}
-
-@font-face {
-    font-family: Montserrat;
-    font-weight: bold;
-    src: url('fonts/Montserrat-SemiBold.otf');
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Sansita');
 
 body {
-    background: #000;
+    background: #fbffff;
     height: 2000px;
-    color: #c2c2c2;
+    color: #444;
     margin: 0;
-    font-family: 'Roboto', Montserrat, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a:link, a:visited, a:hover, a:active { 
-    color: #fff;
+    color: #00c1ab;
     text-decoration: none;
 }
 
@@ -47,8 +38,14 @@ li.menu {
 
 li.menu a {
     text-decoration: none;
+    color: #fff;
     display: block;
     padding: 10px 20px 10px 20px;
+}
+
+li.menu a:hover {
+    text-decoration: none;
+    background-color: #3ad4c1;
 }
 
 .content {
@@ -56,17 +53,33 @@ li.menu a {
     width: 800px;
 }
 
+p {
+    line-height: 24px;
+}
 /*
     Consider different font for heading?
 */
 h1 {
-    font-size: 24px;
-    font-family: Montserrat;
+    font-size: 32px;
+    font-family: 'Sansita';
     font-weight: bold;
 }
 
+h2 {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 50px;
+}
 .video {
     border: 0px solid #ccc;
+    margin: 15px 0px;
 }
 
 /*
