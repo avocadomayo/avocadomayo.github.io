@@ -15,9 +15,14 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-a:link, a:visited, a:hover, a:active { 
+a:link, a:visited, a:active { 
     color: #00c1ab;
     text-decoration: none;
+}
+
+a:hover { 
+    color: #00c1ab;
+    text-decoration: underline;
 }
 
 .center {
@@ -25,7 +30,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 ul.menu {
-    width: 600px;
+    width: 430px;
     list-style-type: none;
     margin-top: 50px;
     overflow: hidden;
