@@ -8,7 +8,8 @@
 
 body {
     background: #fbffff;
-    height: 2000px;
+    height: 4000px;
+    width: 100%;
     color: #444;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -30,20 +31,27 @@ ul.menu {
     overflow: hidden;
 }
 
-li.menu {
+ul.single_button {
+    width: 130px;
+    list-style-type: none;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+li.button {
     float: left;
     font-size: large;
     background-color: #00c1ab;
 }
 
-li.menu a {
+li.button a {
     text-decoration: none;
     color: #fff;
     display: block;
     padding: 10px 20px 10px 20px;
 }
 
-li.menu a:hover {
+li.button a:hover {
     text-decoration: none;
     background-color: #3ad4c1;
 }
@@ -55,6 +63,10 @@ li.menu a:hover {
 
 p {
     line-height: 24px;
+}
+
+.space_after {
+    margin-bottom: 40px;
 }
 /*
     Consider different font for heading?
@@ -75,7 +87,6 @@ h3 {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    margin-top: 50px;
 }
 .video {
     border: 0px solid #ccc;
