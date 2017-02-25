@@ -5,9 +5,11 @@
     <meta charset="utf-8" />
     <link href="style.css" rel="stylesheet" />
     <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="js/highlightjs-styles/zenburn.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
-    <script type="text/javascript" src="js/jquery.viewport.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.viewport.js"></script> -->
+    <script type="text/javascript" src="js/highlight.pack.js"></script>
 </head>
 <body>
     <a name="top"></a>
@@ -17,12 +19,17 @@
         <li class="button"><a href="#contact"><i class="fa fa-commenting-o fa-fw" aria-hidden="true"></i>&nbsp; Contact</a></li>
     </ul>
     <div class="content center">
-        <h1>Hi! I'm Wendy, an aspiring UX designer in Vancouver.</h1>
-        <p>I'm passionate about making intuitive design. I also love playing and creating video games.</p>
-        <p>Background in Computer Science.</p>
+        <h1>Hi! I'm Wendy, a designer and developer in Vancouver.</h1>
+        <p>I'm passionate about creating intuitive design.</p>
         <p>
-            <a href="mailto:wendy_jy_liu@hotmail.com"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> &nbsp; Shoot me a message!</a>
+            <a href="mailto:wendy_jy_liu@hotmail.com"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp; Shoot me a message!</a>
         </p>
+    </div>
+    <!-- VanGo snippet -->
+    <div class="content center">
+        <h1>VanGo Project</h1>
+        <h2>Android App | 2017 | UX Researcher + Software Developer</h2>
+        <p>Cool code coming soon...</p>
     </div>
 
     <div class="content center">
@@ -35,8 +42,12 @@
         <h3>Problem</h3>
         <p class="space_after">Degree Navigator is an existing degree audit interface at University of British Columbia intended to help students track and plan their degree. Like many university websites, it was dated and difficult to navigate. Information needed for degree planning was structured per institutional organization, rather than how students planned their courses to fulfill their graduation requirements. Students were prone to overlook required courses, which often delayed their graduation.</p>
         <h3>Solution</h3>
-        <p class="space_after">I collaborated with a team of HCI students from UBC to user test the current interface and identify student needs in degree planning. We designed a proof-of-concept that centralized information to create a seamless, efficient degree-planning experience. In this interactive prototype, students can browse courses and see how credits would fit into their degrees, all in one place. I created a modern look to the interface, and sampled colours from the university website to maintain consistency.</p>
+        <p class="space_after">I collaborated with a team of HCI students from UBC to user test the current interface and identify student needs in degree planning. We designed a proof-of-concept that centralized information to create a seamless, efficient degree-planning experience. In this interactive prototype, students can browse courses and see how credits would fit into their degrees, all in one place.</p>
+        <h3>Persona</h3>
+        <p>Encapsulation of our target user. Based on user research, it highlights users' current behaviour, their goals and expectations, and pain points in the current interface. Features were created and prioritized according to the persona's needs.</p>
         <img src="img/degnav_persona.png" class="space_after" width="750" />
+        <h3>Style Guide</h3>
+        <p>I created a modern look to the interface, and sampled colours from the university website to maintain consistency.</p>
         <img src="img/degnav_styleguide.png" class="space_after" width="700" />
     </div>
 
@@ -45,7 +56,10 @@
         <h1>Shadow Switch</h1>
         <iframe width="800" height="450" src="https://www.youtube.com/embed/pANaZa0b3ts" frameborder="0" allowfullscreen></iframe>
         <h2>BC Game Jam Project | 2017 | Pixel Artist</h2>
-        <p class="space_after"></p>
+        <h3>Game sypnosis</h3>
+        <p class="space_after">"Ben possesses the ability to morph into a shadow. Evil scientists have captured him, hoping to extract his powers for military use. Help Ben escape the facility, and unveil dark secrets of the government ..."</p>
+        <h3>Pixel Art</h3>
+        <p>I drew inspiration from <i>Hyper Light Drifter</i> to create a minimalist, modern world using pixels.</p>
         <img src="img/shadow_artboard.png" width="750" />
     </div>
 
@@ -66,6 +80,7 @@
     <ul class="single_button center">
         <li class="button"><a href="#top">Back Up</a></li>
     </ul>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
     <script type="text/javascript" src="js/smoothscroll.js"></script>
     <!-- Crashes mobile browsers?
     <script type="text/javascript">
