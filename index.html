@@ -29,7 +29,63 @@
     <div class="content center">
         <h1>VanGo Project</h1>
         <h2>Android App | 2017 | UX Researcher + Software Developer</h2>
-        <p>Cool code coming soon...</p>
+        <p>Project details coming soon ... </p>
+        <p>I wrote a small JavaScript app that load data from JSON files to display on maps.</p>
+        <h3>Some Backend Code</h3>
+        <p>
+        I drew zones using Google Earth, and used <a href="https://github.com/mapbox/togeojson" target="_blank">togeojson</a> to convert data into JSON.
+        The raw JSON was quite dirty- I wrote a cleaner that stores each shape as an object only with relevant fields.</p>
+        <pre><code class="js">
+/**
+ * Parses and writes clean JSON into a file.
+ * @param {object} json - Object corresponding to dirty JSON.
+ * @todo During map completion sprint, customize each zone's colour.
+ */
+function cleanJson(json) {
+    var clean = [];
+    for (var x of obj.features) {
+        var coord = [];
+        for (i = 0; i < x.geometry.coordinates[0].length; i++) {
+            coord.push([x.geometry.coordinates[0][i][1], x.geometry.coordinates[0][i][0]]);
+        };
+        var name = x.properties.name; // name of shape
+        var shape = {
+            "name": name,
+            "id": getIdFromName(name), // assigns unique ID to shape
+            "coordinates": coord,
+        };
+        clean.push(shape);
+    };
+    clean = JSON.stringify(clean, null, " ");
+    // Write clean data to a JSON file
+    writeToFile(pathToSave, clean, null);
+}
+// ...
+        </code></pre>
+        <h3>Some Frontend Code</h3>
+        <p>The clean JSON data is used to create polygons which are overlayed on a map.</p>
+        <pre><code class="js">
+/**
+ * Creates a polygon for each shape defined in JSON.
+ * @param {object} map - Microsoft.Map object to overlay the polygons.
+ * @param {object} json - JSON containing each zone's coordinates.
+ */
+function drawShapeFromJson(map, json) {
+    for (x of json) {
+        var latlon = [];
+        for (i = 0; i < x.coordinates.length; i++) {
+            latlon.push(new Microsoft.Maps.Location(x.coordinates[i][0], x.coordinates[i][1]));
+        }
+        var polygon = new Microsoft.Maps.Polygon(latlon, 
+            { fillColor: Microsoft.Maps.Color(130, 130, 130, 130) });
+        map.entities.push(polygon);
+    }
+    return;
+}
+// ...
+        </code></pre>
+        <p>A map of Vancouver with rendered shapes.</p>
+        <img src="img/vango_zones2.jpg" width="800" />
     </div>
 
     <div class="content center">
