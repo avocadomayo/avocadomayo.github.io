@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
 <head>
     <title>Wendy Liu - designer and developer in Vancouver</title>
@@ -29,22 +30,13 @@
     <div class="content center">
         <h1>VanGo Project</h1>
         <h2>Android App | 2017 | UX Researcher + Software Developer</h2>
-        <h3>Problem</h3>
-        <p><i>"How can we help Vancouverites get out, explore their city, and grow their love for culture through engagement in public art?"</i></p>
+        <p>Project details coming soon ... </p>
+        <p>I wrote a small JavaScript app that load data from JSON files to display on maps.</p>
+        <h3>Some Backend Code</h3>
         <p>
-            Microsoft came to us with a fully functional prototype of an app to help people find, engage, and learn about public art.
-            My team's goal is to make this app a truly engaging experience that keeps users returning week after week.
+            I drew zones using Google Earth, and used <a href="https://github.com/mapbox/togeojson" target="_blank">togeojson</a> to convert data into JSON.
+            The raw JSON was quite dirty- I wrote a cleaner that stores each shape as an object only with relevant fields.
         </p>
-        <h3>Solution</h3>
-        <p>
-            One way we wanted to engage users is to add elements of gamification. We drew inspiration from maps in video games, such as Grand Theft Auto and Fallout,
-            to create a map completion feature to encourage users to explore. We divided Vancouver into geographical 'zones' to break map completion into manageable chunks.
-            Below is some of the back-end and front-end work I have done to bring 'zones' into life.
-        </p>
-        <h3>Backend</h3>
-        <p>A zones is represented by a list of longitude-latitude coordinates that together form a shape. 
-        I drew zones using Google Earth, and used <a href="https://github.com/mapbox/togeojson" target="_blank">togeojson</a> to convert data into JSON.
-        The raw JSON was quite dirty- I wrote a cleaner that stores each shape as an object only with relevant fields.</p>
         <pre><code class="js">
 /**
  * Parses and writes clean JSON into a file.
@@ -72,7 +64,7 @@ function cleanJson(json) {
 }
 // ...
         </code></pre>
-        <h3>Frontend</h3>
+        <h3>Some Frontend Code</h3>
         <p>The clean JSON data is used to create polygons which are overlayed on a map.</p>
         <pre><code class="js">
 /**
@@ -94,8 +86,8 @@ function drawShapeFromJson(map, json) {
 }
 // ...
         </code></pre>
-        <p>A map of Vancouver with drawn zones.</p>
-        <img src="img/vango_zones.jpg" width="800" />
+        <p>A map of Vancouver with rendered shapes.</p>
+        <img src="img/vango_zones2.jpg" width="800" />
     </div>
 
     <div class="content center">
