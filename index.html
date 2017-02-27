@@ -73,17 +73,12 @@ function cleanJson(json) {
  * @param {object} map - Microsoft.Map object to overlay the polygons.
  * @param {object} json - JSON containing each zone's coordinates.
  */
-function drawShapeFromJson(map, json) {
-    for (x of json) {
-        var latlon = [];
-        for (i = 0; i < x.coordinates.length; i++) {
-            latlon.push(new Microsoft.Maps.Location(x.coordinates[i][0], x.coordinates[i][1]));
-        }
-        var polygon = new Microsoft.Maps.Polygon(latlon, 
-            { fillColor: Microsoft.Maps.Color(130, 130, 130, 130) });
-        map.entities.push(polygon);
-    }
-    return;
+function drawShapesFromJson(map, json) {
+    (json.map(elem => {
+        return new Microsoft.Maps.Polygon(elem.coordinates.map(coordinate => {
+            return new Microsoft.Maps.Location(coordinate[0], coordinate[1]);
+        }), { fillColor: Microsoft.Maps.Color(130, 130, 130, 130) })
+    })).map(shape => { map.entities.push(shape); });
 }
 // ...
         </code></pre>
