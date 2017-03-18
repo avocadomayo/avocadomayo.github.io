@@ -22,29 +22,37 @@
     </ul>
     <div class="content center">
         <h1>Hi! I'm Wendy, a software developer based in Vancouver.</h1>
-        <p>I'm empathetic in nature, and I love creating intuitive design.<br />
+        <p>I'm currently a full-stack Android developer working on a project to enhance a location-based app.
+        Working in a small interdisciplinary team of six, I collaborate with designers and artists on a daily basis.</p>
+        <p>
         Coming from an international background, I'm looking for opportunities to combine coding with my multicultural character.</p>
         <p>
             <a href="mailto:wendy_jy_liu@hotmail.com"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>&nbsp;
             <a href="https://www.linkedin.com/in/wendyjyliu/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>&nbsp;
         </p>
     </div>
+
+    <a name="portfolio"></a>
     <!-- VanGo snippet -->
     <div class="content center">
         <h1>VanGo Project</h1>
-        <h2>Android App | 2017 | UX Researcher + Software Developer</h2>
-        <p>Project details coming soon ... </p>
-        <p>I wrote a small JavaScript app that load data from JSON files to display on maps.</p>
-        <h3>Some Backend Code</h3>
+        <h2>Android App | 2017 | Android Developer + UX Researcher</h2>
+        <p><i>The short version:</i> I'm enhancing an app that engage Vancouverites in arts and culture. </p>
+        <p>Details are coming soon. But here's an article on the app I am working on.<br />
+        <a href="http://desibuzzbc.com/2016/06/20/microsoft-unveils-vango/" target="_blank"><i>"Microsoft Unveils VanGo"</i></a></p>
+        <h3>Map completion feature</h3>
+        <p>Ever play games like GTA or Fallout? Was your chest filled with excitement when you discovered a whole new area to explore? We were. 
+        That's why we divided the map of Vancouver into meaningful <i>zones</i> to encourage users to re-discover the city and explore its nooks and corners. 
+        Zones help break down discovery process into manageable chunks.</p>
         <p>
+            I wrote small JavaScript app to process map data that dictates zones.
             I drew zones using Google Earth, and used <a href="https://github.com/mapbox/togeojson" target="_blank">togeojson</a> to convert data into JSON.
-            The raw JSON was quite dirty- I wrote a cleaner that stores each shape as an object only with relevant fields.
+            The raw JSON was quite dirty- in the code below you'll see my attempt to turn it into a meaningful data structure.
         </p>
         <pre><code class="js">
 /**
  * Parses and writes clean JSON into a file.
  * @param {object} json - Object corresponding to dirty JSON.
- * @todo During map completion sprint, customize each zone's colour.
  */
 function cleanJson(json) {
     var clean = [];
@@ -67,8 +75,7 @@ function cleanJson(json) {
 }
 // ...
         </code></pre>
-        <h3>Some Frontend Code</h3>
-        <p>The clean JSON data is used to create polygons which are overlayed on a map.</p>
+        <p>The clean JSON is used to create polygons (= zones!) which are overlayed on a map.</p>
         <pre><code class="js">
 /**
  * Creates a polygon for each shape defined in JSON.
@@ -84,13 +91,12 @@ function drawShapesFromJson(map, json) {
 }
 // ...
         </code></pre>
-        <p>A map of Vancouver with rendered shapes.</p>
+        <p>A map of Vancouver showing two zones! Pretty, eh?</p>
         <img src="img/vango_zones2.jpg" width="800" />
     </div>
 
     <div class="content center">
         <!-- Degree Navigator -->
-        <a name="portfolio"></a>
         <h1>Degree Navigator Redesign</h1>
         <!--<video src="img/degnav.mp4" id="degnav" class="video" width="800" height="434" loop autoplay>HTML5 Video is not supported.</video>-->
         <iframe width="800" height="450" src="https://www.youtube.com/embed/o-IRUSMCCgo" frameborder="0" allowfullscreen></iframe>
@@ -122,8 +128,9 @@ function drawShapesFromJson(map, json) {
     <div class="content center">
         <a name="resume"></a>
         <h1>Resume</h1>
-        <p><a href="resume-dev.pdf" target="_blank"><i class="fa fa-paperclip" aria-hidden="true"></i>&nbsp; Software Developer | PDF</a></p>
-        <p><a href="resume-ux.pdf" target="_blank"><i class="fa fa-paperclip" aria-hidden="true"></i>&nbsp; UX Designer | PDF</a></p>
+        <p><a href="WendyLiu_SoftwareDeveloper_Resume.pdf" target="_blank"><i class="fa fa-paperclip" aria-hidden="true"></i>&nbsp; Download Resume | PDF</a></p>
+        <img src="resume-dev.jpg" width="800" />
+    
     </div>
 
     <div class="content center">
