@@ -22,7 +22,7 @@
     </ul>
     <div class="content center">
         <h1>Hi! I'm Wendy, a software developer based in Vancouver.</h1>
-        <p>I'm currently a full-stack Android developer working on a project to enhance a location-based app.
+        <p>I'm currently a full-stack Android developer working on a location-based app.
         Working in a small interdisciplinary team of six, I collaborate with designers and artists on a daily basis.</p>
         <p>
         Coming from an international background, I'm looking for opportunities to combine coding with my multicultural character.</p>
@@ -37,8 +37,11 @@
     <div class="content center">
         <h1>VanGo Project</h1>
         <h2>Android App | 2017 | Android Developer + UX Researcher</h2>
-        <p><i>The short version:</i> I'm enhancing an app that engage Vancouverites in arts and culture. </p>
-        <p>Details are coming soon. But here's an article on the app I am working on.<br />
+        <p><img src="img/logo_microsoft.png" width="100" />&nbsp;
+        <img src="img/logo_cdm.png" width="90" />
+        <img src="img/logo_baf.png" width="70" /></p>
+        <p><i>The short version:</i> My team is re-inventing the core loop, and designing and implementing new features to make VanGo a more engaging experience. </p>
+        <p>Details coming soon. But here's an article on the app I am working on.<br />
         <a href="http://desibuzzbc.com/2016/06/20/microsoft-unveils-vango/" target="_blank"><i>"Microsoft Unveils VanGo"</i></a></p>
         <h3>Map completion feature</h3>
         <p>Ever play games like GTA or Fallout? Was your chest filled with excitement when you discovered a whole new area to explore? We were. 
@@ -61,7 +64,7 @@ function cleanJson(json) {
         for (i = 0; i < x.geometry.coordinates[0].length; i++) {
             coord.push([x.geometry.coordinates[0][i][1], x.geometry.coordinates[0][i][0]]);
         };
-        var name = x.properties.name; // name of shape
+        var name = x.properties.name; // gets name of shape
         var shape = {
             "name": name,
             "id": getIdFromName(name), // assigns unique ID to shape
