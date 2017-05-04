@@ -1,16 +1,13 @@
-﻿
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Wendy Liu - designer and developer in Vancouver</title>
+    <title>Wendy Liu - Software Engineer</title>
     <meta charset="utf-8" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="js/highlightjs-styles/zenburn.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
-    <!-- <script type="text/javascript" src="js/jquery.viewport.js"></script> -->
     <script type="text/javascript" src="js/highlight.pack.js"></script>
 </head>
 <body>
@@ -22,10 +19,13 @@
     </ul>
     <div class="content center">
         <h1>Hi! I'm Wendy, a software developer based in Vancouver.</h1>
-        <p>I'm currently a full-stack Android developer working on a location-based app.
-        Working in a small interdisciplinary team of six, I collaborate with designers and artists on a daily basis.</p>
         <p>
-        Coming from an international background, I'm looking for opportunities to combine coding with my multicultural character.</p>
+            I've recently completed a project as a full-stack Android developer on a location-based app.
+            Working in a small interdisciplinary team, I collaborated with designers and artists on a daily basis.
+        </p>
+        <p>
+            Coming from an international background, I'm currently looking for new projects to grow as a programmer and to combine coding with my multicultural character.
+        </p>
         <p>
             <a href="mailto:wendy_jy_liu@hotmail.com"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>&nbsp;
             <a href="https://www.linkedin.com/in/wendyjyliu/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>&nbsp;
@@ -36,23 +36,96 @@
     <!-- VanGo snippet -->
     <div class="content center">
         <h1>VanGo Project</h1>
-        <h2>Android App | 2017 | Android Developer + UX Researcher</h2>
-        <p><img src="img/logo_microsoft.png" width="100" />&nbsp;
-        <img src="img/logo_cdm.png" width="90" />
-        <img src="img/logo_baf.png" width="70" /></p>
-        <p><i>The short version:</i> My team is re-inventing the core loop, and designing and implementing new features to make VanGo a more engaging experience. </p>
-        <p>Details coming soon. But here's an article on the app I am working on.<br />
-        <a href="http://desibuzzbc.com/2016/06/20/microsoft-unveils-vango/" target="_blank"><i>"Microsoft Unveils VanGo"</i></a></p>
-        <h3>Map completion feature</h3>
-        <p>Ever play games like GTA or Fallout? Was your chest filled with excitement when you discovered a whole new area to explore? We were. 
-        That's why we divided the map of Vancouver into meaningful <i>zones</i> to encourage users to re-discover the city and explore its nooks and corners. 
-        Zones help break down discovery process into manageable chunks.</p>
+        <h2>Android App | 2017 | Full-Stack Android Developer + UX Researcher</h2>
         <p>
-            I wrote small JavaScript app to process map data that dictates zones.
-            I drew zones using Google Earth, and used <a href="https://github.com/mapbox/togeojson" target="_blank">togeojson</a> to convert data into JSON.
-            The raw JSON was quite dirty- in the code below you'll see my attempt to turn it into a meaningful data structure.
+            <img src="img/logo_microsoft.png" width="100" />&nbsp;
+            <img src="img/logo_cdm.png" width="90" />
+            <img src="img/logo_baf.png" width="70" />
         </p>
-        <pre><code class="js">
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/-eBEulWQiAA" frameborder="0" allowfullscreen></iframe>
+        <div class="caption">VanGo at the end of the project - new core loop, new look and feel.</div>
+
+        <h3>Problem</h3>
+        <p>Public art often serves to remind us of certain, significant eras of the city and symbolizes important themes that define the city. We walk by public art unknowingly every day, without knowing what they mean or represent. Many of us allow public art to fade into our periphery, and even when a piece speaks to you, you struggle to find information about it. In project VanGo, we [<a href="https://thecdm.ca/projects/industry-projects/mykrew" target="_blank">team mykrew of Centre for Digital Media</a>] aimed to engage Vancouverites with their city through public art, by addressing the problems of discoverability and accessibility.</p>
+
+        <img src="img/vango_art_map.jpg" width="800" />
+        <div class="caption">Public artworks in Vancouver.</div>
+
+        <p>When we received VanGo from Microsoft Vancouver, it was a <a href="http://desibuzzbc.com/2016/06/20/microsoft-unveils-vango/" target="_blank">fully functional prototype</a>. The user chooses an art piece to visit, goes to the site, takes a photo within capture range, which unlocks information about the art piece.</p>
+        <p>Our initial understanding of the project was that it needed a WOW! factor; sprinkles on an already baked cake to make it more engaging. But we quickly realized the experience lacked a target persona and that the existing features didn’t work in tandem.</p>
+
+        <h3>Solution</h3>
+        <p>"VanGo makes discovering public art an exploration for locals and tourists to unlock new art knowledge and cultural experiences in Vancouver."</p>
+        <p>We chose lay new foundations for VanGo, by redesigning the core experience and transforming its look and feel using an user-centred approach. We applied Nir Eyal’s Hook Model to reinvent and gamify the core loop to make it a sticky experience, and added new features that complement the essence of VanGo. Due to time constraint - we had only 12 weeks - we did not implement all aspects of our envisioned customer journey, notably a navigation system that guides the user to an art piece of interest. But as strong believers of user-centered design, we carried out extensive user research and testing at every step of the process to make informed design decisions. The outcome of this 12-week project is a fully-functional Minimal Viable Product.</p>
+        
+        <img src="img/vango_process.png" width="600" />
+        <div class="caption">We applied Agile and user-centered design to get there. We started from scratch: first, a ton of background and user research to identify who we’re building for. Then we pooled our coolest ideas and applied methods like value-complexity matrices to prioritize and scope our project. In production, we implemented features, and tested them at every iteration, until we had the MVP!</div>
+
+            <img src="img/vango_persona.png" width="800" />
+            <div class="caption">VanGo's target persona, an outcome of user research.</div>
+
+            <h3>My Role</h3>
+            <p>
+                In production, I assumed the role of a full-stack Android developer, I have ...
+                <ul>
+                    <li>Created UML diagrams from client source code to map out how the code works. These diagrams helped the development team move forward, since the client code base was undocumented.</li>
+                    <li>Integrated data in the back-end using SQLite.</li>
+                    <li>Communicated asset requirements to artists and collaborated with designers via tools such as Zeplin to transform the UI for VanGo.</li>
+                    <li>Collaborated with other developers on the team to combine and integrate code.</li>
+                    <li>Reviewed and improved other developers’ code.</li>
+                    <li>Implemented four fully-functional features:</li>
+                </ul>
+            </p>
+            <!--img src="img/asset_nexus5.png" width="400" /-->
+            <div class="project-grid">
+                <div class="project-row">
+                    <div class="nexus-screen">
+                        <video src="asset/vango_onboarding.mov" width="257" height="458" autoplay loop></video>
+                        <h3>Onboarding</h3>
+                        <p>Clear, simple instructions to help the user start exploring!</p>
+                    </div>
+                    <div class="nexus-screen">
+                        <video src="asset/vango_unlocking.mov" width="257" height="458" autoplay loop></video>
+                        <h3>Unlocking</h3>
+                        <p>Informs user of new discovery.</p>
+                    </div>
+                </div>
+
+                <div class="project-row">
+                    <div class="nexus-screen">
+                        <video src="asset/vango_map_completion.mov" width="257" height="458" autoplay loop></video>
+                        <h3>Map Completion</h3>
+                        <p>Helps users reflect on discovery progress.</p>
+                    </div>
+                    <div class="nexus-screen">
+                        <video src="asset/vango_bookmarks.mov" width="257" height="458" autoplay loop></video>
+                        <h3>Bookmarks</h3>
+                        <p>Enables a customized experience.</p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                In pre-production, my role was primarily a UX researcher. I have ...
+                <ul>
+                    <li>Carried out background research to identify user demographics, motivation, replay value, and benefits of mobile location-based games such as Pokémon GO and Ingress.</li>
+                    <li>Carried out research into competitors, i.e. existing location-based apps about public art.</li>
+                    <li>Collected quantitative data in various public spaces to identify a target persona.</li>
+                    <li>Created conceptual models clearly mapping relationships between key concepts in the envisioned user experience to facilitate good design.</li>
+                    <li>Participated in user testing as an observer to gain first-hand understanding of how users interact with VanGo and to identify bugs.</li>
+                </ul>
+            </p>
+
+            <h3>Technical Challenge: Drawing "Zones"</h3>
+            <p>
+                Ever play games like GTA or Fallout? Was your chest filled with excitement when you discovered a whole new area to explore? We were.
+                That's why we divided the map of Vancouver into meaningful <i>zones</i> to encourage users to re-discover the city and explore its nooks and corners.
+                Zones help break down discovery process into manageable chunks and group artworks together. The real challenge came in implementing zones in the Webview version of Bing Maps embedded in VanGo.
+            </p>
+            <p>
+                I drew zones using Google Earth, and used <a href="https://github.com/mapbox/togeojson" target="_blank">togeojson</a> to convert data into JSON.
+                The raw JSON was quite dirty- I wrote a script to process this data, saving hours of production time.
+            </p>
+            <pre><code class="js">
 /**
  * Parses and writes clean JSON into a file.
  * @param {object} json - Object corresponding to dirty JSON.
@@ -62,12 +135,12 @@ function cleanJson(json) {
     for (var x of obj.features) {
         var coord = [];
         for (i = 0; i < x.geometry.coordinates[0].length; i++) {
-            coord.push([x.geometry.coordinates[0][i][1], x.geometry.coordinates[0][i][0]]);
+            coord.push([x.geometry.coordinates[0][i][1], x.geometry.coordinates[0][i][0]]); // lats and longs
         };
-        var name = x.properties.name; // gets name of shape
+        var name = x.properties.name;
         var shape = {
             "name": name,
-            "id": getIdFromName(name), // assigns unique ID to shape
+            "id": assignGUID(),
             "coordinates": coord,
         };
         clean.push(shape);
@@ -78,8 +151,8 @@ function cleanJson(json) {
 }
 // ...
         </code></pre>
-        <p>The clean JSON is used to create polygons (= zones!) which are overlayed on a map.</p>
-        <pre><code class="js">
+            <p>The clean JSON is used to create polygons (= zones!) which are overlayed on a Bing Map object.</p>
+            <pre><code class="js">
 /**
  * Creates a polygon for each shape defined in JSON.
  * @param {object} map - Microsoft.Map object to overlay the polygons.
@@ -88,20 +161,39 @@ function cleanJson(json) {
 function drawShapesFromJson(map, json) {
     (json.map(elem => {
         return new Microsoft.Maps.Polygon(elem.coordinates.map(coordinate => {
-            return new Microsoft.Maps.Location(coordinate[0], coordinate[1]);
-        }), { fillColor: Microsoft.Maps.Color(130, 130, 130, 130) })
+            return new Microsoft.Maps.Location(coordinate[0], coordinate[1]); // lat and long
+        }))
     })).map(shape => { map.entities.push(shape); });
 }
 // ...
         </code></pre>
-        <p>A map of Vancouver showing two zones! Pretty, eh?</p>
-        <img src="img/vango_zones2.jpg" width="800" />
-    </div>
+            <p>A map of Vancouver showing 40 zones! Pretty, eh?</p>
+            <img src="img/vango_zones.jpg" width="800" />
+
+            <h3>What I Learned</h3>
+            <p>
+                <ul>
+                    <li>Learned how to integrate data into an Android app using SQLite.</li>
+                    <li>Learned the components of Android Activity and Fragment lifecycles.</li>
+                    <li>Learned how to bind two Activities in an Android app using an Intent.</li>
+                    <li>Learned how to use the Fragment Transaction Manager to begin or swap Fragments.</li>
+                    <li>Learned how to store data in shared preferences as well as in SQL databases.</li>
+                    <li>Learned how to build UI by manipulating layout files, managing assets and using the Android resource selection system.</li>
+                    <li>Learned how to implement a variety of UIs using Views, such as ViewPager and RecyclerView.</li>
+                    <li>Learned how to use Visual Studio.</li>
+                    <li>Gained exposure to client management.</li>
+                    <li>Gained experience communicating with non-programmers, including project managers, artists and designers.</li>
+                </ul>
+            </p>
+        </div>
+
+    <ul class="single_button center">
+        <li class="button"><a href="#top">Back Up</a></li>
+    </ul>
 
     <div class="content center">
         <!-- Degree Navigator -->
         <h1>Degree Navigator Redesign</h1>
-        <!--<video src="img/degnav.mp4" id="degnav" class="video" width="800" height="434" loop autoplay>HTML5 Video is not supported.</video>-->
         <iframe width="800" height="450" src="https://www.youtube.com/embed/o-IRUSMCCgo" frameborder="0" allowfullscreen></iframe>
         <h2>Web app prototype | 2016 | UX Designer</h2>
         <h3>Problem</h3>
@@ -127,13 +219,17 @@ function drawShapesFromJson(map, json) {
         <p>I drew inspiration from <i>Hyper Light Drifter</i> to create a minimalist, modern world using pixels.</p>
         <img src="img/shadow_artboard.png" width="750" />
     </div>
+    
+    <ul class="single_button center">
+        <li class="button"><a href="#top">Back Up</a></li>
+    </ul>
 
     <div class="content center">
         <a name="resume"></a>
         <h1>Resume</h1>
         <p><a href="WendyLiu_SoftwareDeveloper_Resume.pdf" target="_blank"><i class="fa fa-paperclip" aria-hidden="true"></i>&nbsp; Download Resume | PDF</a></p>
         <img src="resume-dev.jpg" width="800" />
-    
+
     </div>
 
     <div class="content center">
@@ -148,24 +244,19 @@ function drawShapesFromJson(map, json) {
         <li class="button"><a href="#top">Back Up</a></li>
     </ul>
     <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <!--dependency on jQuery-->
     <script type="text/javascript" src="js/smoothscroll.js"></script>
-    <!-- Crashes mobile browsers?
-    <script type="text/javascript">
-        $(window).scroll(function () {
-            if ($("degnav:in-viewport"))
-                document.getElementById("degnav").play();
-        });
-    </script>
-    -->
-
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-94069640-1', 'auto');
-      ga('send', 'pageview');
+        ga('create', 'UA-94069640-1', 'auto');
+        ga('send', 'pageview');
     </script>
 </body>
 </html>
