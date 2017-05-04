@@ -68,12 +68,17 @@ p {
     line-height: 24px;
 }
 
+.caption {
+    font-size: 14px;
+    color: #808080;
+    margin: 0 0 15px 0;
+    padding: 0px;
+}
+
 .space_after {
     margin-bottom: 40px;
 }
-/*
-    Consider different font for heading?
-*/
+
 h1 {
     font-size: 32px;
     font-family: 'Sansita';
@@ -88,16 +93,53 @@ h2 {
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
-.video {
-    border: 0px solid #ccc;
-    margin: 15px 0px;
+
+.project-grid {
+    display:inline-block;
+    margin: 0;
+    width: 100%;
+    /*background-color: yellow;*/
 }
 
-/*
-    display: block;
-    background-color: #0aa99f;
-*/
+
+.project-row {
+    float: left;
+    /*background-color: green;*/
+}
+
+.project-row .nexus-screen {
+    background-image: url(../img/asset_nexus5.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    width: 400px;
+    float: left;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.project-row .nexus-screen video {
+    padding-top: 54px;
+    padding-left: 71px;
+}
+
+.project-row .nexus-screen h3 {
+    width: 60%;
+    margin: 65px 0 0px 71px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    /*background-color: blue;*/
+}
+
+.project-row .nexus-screen p {
+    width: 60%;
+    margin: 0 0 0 71px;
+    font-size: 14px;
+    color: #808080;
+    line-height: normal;
+    /*background-color: red;*/
+}
